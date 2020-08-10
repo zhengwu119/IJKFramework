@@ -89,8 +89,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes/*.zip"
+  spec.source_files  = "Classes/*.sh"
   #spec.exclude_files = "Classes/Exclude"
+  spec.vendored_frameworks = "Classes/*.framework"
 
   spec.vendored_frameworks = 'IJKMediaFrameworkWithSSL.framework'
   spec.frameworks  = "AudioToolbox", "AVFoundation", "CoreGraphics", "CoreMedia", "CoreVideo", "MobileCoreServices", "OpenGLES", "QuartzCore", "VideoToolbox", "Foundation", "UIKit", "MediaPlayer"
@@ -98,6 +99,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = '8.0'
   spec.requires_arc = true
+
 
   # spec.public_header_files = "Classes/**/*.h"
 
