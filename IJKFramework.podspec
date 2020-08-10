@@ -17,17 +17,17 @@ Pod::Spec.new do |spec|
 
   spec.name         = "IJKFramework"
   spec.version      = "0.0.1"
-  spec.summary      = "This a framework of IJKFramework"
+  spec.summary      = "This a framework of IJKFramework, build with FFMpeg 4.x, for IJKPlayer."
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-    FLUTTER IJK PLAER
+    FLUTTER IJK PLAUER,  build with FFMpeg 4.x, for IJKPlayer useage......
                    DESC
 
-  spec.homepage     = "https://github.com/zhengwu119/IJKFramework.git"
+  spec.homepage     = "https://github.com/zhengwu119/IJKFramework"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = {:git => "https://github.com/zhengwu119/IJKFramework.git"}
+  spec.source       = {:git => "https://github.com/zhengwu119/IJKFramework.git", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
