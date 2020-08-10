@@ -89,9 +89,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes/*.sh"
+  spec.source_files  = "Classes/*"
   #spec.exclude_files = "Classes/Exclude"
-  spec.vendored_frameworks = "Classes/*.framework"
+  spec.vendored_frameworks = "Classes/IJKMediaFrameworkWithSSL.framework"
 
   spec.vendored_frameworks = 'IJKMediaFrameworkWithSSL.framework'
   spec.frameworks  = "AudioToolbox", "AVFoundation", "CoreGraphics", "CoreMedia", "CoreVideo", "MobileCoreServices", "OpenGLES", "QuartzCore", "VideoToolbox", "Foundation", "UIKit", "MediaPlayer"
@@ -141,9 +141,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-
-  spec.prepare_command = <<-CMD
-    unzip ./Classes/IJKMediaFrameworkWithSSL.framework.zip
-  CMD
 
 end
