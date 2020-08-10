@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes/*"
+  spec.source_files  = "*"
   #spec.exclude_files = "Classes/Exclude"
 
   spec.vendored_frameworks = 'IJKMediaFrameworkWithSSL.framework'
